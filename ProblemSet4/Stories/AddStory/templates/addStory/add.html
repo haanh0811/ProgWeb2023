@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'addStory/styles_add.css' %}">
+    <title>Stories</title>
+</head>
+<body>
+    <h1>Share your story!</h1>
+    <form method="post" action="{% url 'addentry' %}">
+        {% csrf_token %}
+        <label for ="id_user" >Username:</label>
+        {{form.username}}
+        <br>
+        <label for = "id_story" >Story:</label>
+        {{form.newstory}}
+        <br>
+        <input type="submit" value="Share">
+    </form>
+
+    <a href="{% url 'homepage' %}">Read stories</a>
+</body>
+</html>
+

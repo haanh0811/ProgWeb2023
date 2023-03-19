@@ -1,0 +1,38 @@
+h1 {
+    color: #555;
+    text-align: center;
+    font-size: 4em;
+    border-bottom: 1px solid #9d9d9d;
+}
+
+body {
+    background-image: url("background.jpeg");
+    background-size: cover;
+  }
+  
+
+.story-list li {
+    background-color: rgb(232, 170, 181);
+    color :#383737;
+    padding: 10px;
+  }
+button {
+    display: block;
+    margin: 50px auto;
+    padding: 10px 20px;
+    background-color: rgb(202, 93, 111);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d85d77;
+  }
+  a {
+    text-decoration: none;
+  }
+
+
+

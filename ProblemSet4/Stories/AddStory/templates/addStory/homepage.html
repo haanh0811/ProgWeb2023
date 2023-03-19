@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'addStory/styles.css' %}">
+    <title>Stories</title>
+</head>
+<body>
+    <h1>Stories</h1>
+    <ol  class = "story-list">
+        {% for story in stories %}
+        <li>{{ story }}</li>
+        {% endfor %}
+    </ol>
+
+    <a href="{% url 'add' %}"><button>Share your story!</button></a>
+</body>
+</html>
